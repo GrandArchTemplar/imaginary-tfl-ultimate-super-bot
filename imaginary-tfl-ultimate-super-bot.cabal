@@ -1,0 +1,28 @@
+name:                imaginary-tfl-ultimate-super-bot
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/GrandArchTemplar/imaginary-tfl-ultimate-super-bot#readme
+license:             MIT
+license-file:        LICENSE
+author:              GrandArchTemplar
+maintainer:          GrandArchTemplar@gmail.com
+copyright:           Copyright (c) 2018 GrandArchTemplar
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+extra-source-files:  README.md
+
+                       Types
+
+executable imaginary-tfl-ultimate-super-bot
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  other-modules:       Parser
+                       Analizer
+                       Types
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
+                    ,  utf8-string
+                    ,  text
+  ghc-options:         -Wall
